@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/sp.css">
+    <title>Skillpoint</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="">Levelling guide</a>
+        <a href="">Cosmetics Shop</a>
+        <a href="">Usable item Shop</a>
+        <a style="text-decoration: underline;">Skillpoint guide</a>
+    </div>
+    <hr style="width: 90%; margin: auto; color: white; margin-top: 20px;">
+
+    <div class="sidebar">
+        <br><br>
+        <a href="">Informations</a>
+        <br><br>
+        <a href="" >Locations</a>
+        <br><br>
+        <a href="" id="calculatoropen">Calculator</a>
+        <hr style="width: 900px; margin-left: -75px; color: white; margin-top: 275px; rotate: 90deg;">
+    </div>
+
+    <div class="container">
+
+        <div class="calculatorContainer" id="calculatorContainer">
+            <h2>Skillpoint Calculator</h2>
+            <div class="spboosterImages">
+                <img src="../images/sp/t1.png" style="margin-left: 10px;margin-top: 10px; width: 30px ;height: 30px">
+                <img src="../images/sp/t2.png" style="margin-left: 95px;;margin-top: 10px; width: 30px ;height: 30px">
+                <img src="../images/sp/t3.png" style="margin-left: 90px;">
+                <img src="../images/sp/t4.png" style="margin-left: 80px">
+                <img src="../images/sp/info.png" id="sptierinfo"class="infoicon" style="width: 15px; height: 15px">
+            </div>
+            <input type="range" id="spboosterLevelRange" name="spboosterLevelRange" min="1" max="4">
+            <br><br>
+            <div class="splvlInput">
+                <label for="splvlIn">Current Skillpoint level: </label>
+                <input type="number" name="splvlIn" id="splvlIn" max="99" min="1" value="1">
+                <img src="../images/sp/info.png" class="infoicon" id="splvlinfo" style="width: 15px; height: 15px">
+            </div>            
+            <br>
+            <div class="sppointInput">
+                <label for="sppointIn">Current Skillpoint points: </label>
+                <input type="text" name="sppointIn" id="sppointIn" value="25">
+                <img src="../images/sp/info.png" class="infoicon" id="sppointinfo" style="width: 15px; height: 15px">
+
+
+            </div>
+            <input id="calculateButton" type="submit" value="Calculate" onclick="spcalculate()">
+            <div class="spboosterOutput">
+                <p >Required Skillpoint booster: <i id="spboosterout"></i></p>
+                <img src="../images/sp/info.png" class="infoicon" id="spboosteramountinfo" style="width: 15px; height: 15px;margin-right: 120px;margin-top: -50px; float:right">
+            </div>
+        </div>
+        <div class="spcalculatorexit" id="spcalculatorexit"> <img src="../images/sp/cross.png"></div>
+        <div class="info-sptier" id="info-sptier">There are four types of boosters, what you can find as loot.</div>
+        <div class="info-splvl" id="info-splvl"><img src="../images/sp/splvl.png"></div>
+        <div class="info-sppoints" id="info-sppoints"><img src="../images/sp/sppoints.png"></div>
+        <div class="info-spboosters" id="info-spboosters">That shows how many boosters do you have to use to reach the maximum level.</div>
+
+    </div>
+    <script src="../scripts/sp.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+body{
+    background-image: url('../images/sp/bg.png');
+}
+
+.navbar {
+    justify-content: space-around;
+    display: flex;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.sidebar a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+
+
+
+.spcalculatorexit{
+    margin-top: -350px;
+    margin-left: 63%;
+
+}
+
+.spcalculatorexit img{
+    width: 25px;
+}
+
+.calculatorContainer{
+    margin: auto;
+    margin-top: -200px;
+    background-color: rgb(173, 97, 24);
+    border-radius: 20px;
+    width: 25%;
+}
+
+.calculatorContainer h2{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.spboosterImages{
+    display: flex;
+    width: 400px;
+    margin: auto;
+
+}
+.spboosterImages img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+#spboosterLevelRange{
+    -webkit-appearance: none !important;
+    background: orange;
+    width: 390px;
+    height: 20px;
+    border-radius: 200px;
+    margin-left: 45px;
+}
+
+#spboosterLevelRange::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:red;
+    width: 25px;
+    height: 25px;
+    border-radius: 200px;
+}
+
+.splvlInput label{
+    font-size: 20px;
+    margin-left: 45px;
+    font-weight: bold;
+}
+
+.splvlInput input {
+    background-color: rgb(173, 97, 24);
+    border: none;
+    font-size: 20px;
+    width: 45px;
+}
+
+.sppointInput label{
+    font-size: 20px;
+    margin-left: 45px;
+    font-weight: bold;
+}
+
+.sppointInput input {
+    background-color: rgb(173, 97, 24);
+    border: none;
+    font-size: 20px;
+    width: 45px;
+}
+
+.spboosterOutput p {
+    font-size: 20px;
+    margin-left: 45px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#calculateButton{
+    background: orange;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 160px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 33.5%;
+}
+
+.info-sptier{
+    text-align: center;
+    width: 200px;
+    padding-top: 5px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin-right: 28%;
+    margin-top: -300px;
+    float: right;
+    display: none;
+}
+
+.info-splvl{
+    position: relative;
+    text-align: center;
+    width: 200px;
+    padding-top: 5px;
+    height: 80px;
+    font-size: 20px;
+    margin-right: 34%;
+    margin-top: -230px;
+    float: right;
+    z-index: 2;
+    display: none;
+}
+
+.info-splvl img{
+    border-radius: 20px;
+    width: 200px;
+}
+
+.info-sppoints{
+    position: relative;
+    text-align: center;
+    width: 200px;
+    padding-top: 5px;
+    height: 80px;
+    font-size: 20px;
+    margin-right: 34%;
+    margin-top: -180px;
+    float: right;
+    z-index: 2;
+    display: none;
+}
+
+.info-sppoints img{
+    border-radius: 20px;
+    width: 200px;
+}
+
+.info-spboosters{
+    text-align: center;
+    width: 200px;
+    padding-top: 5px;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin-right: 33%;
+    margin-top: -100px;
+    float: right;
+    display: none;
+}
